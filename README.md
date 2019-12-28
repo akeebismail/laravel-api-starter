@@ -9,4 +9,5 @@
 
 ##About project
 Laravel api starter
+removing the boring stuff of starting a laravel project.
 ###Authentication and Authorization with Tymon/JWT
