@@ -5,6 +5,7 @@ namespace App\Http\Controllers\API\Auth;
 
 
 use App\Http\Controllers\API\APIController;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
@@ -57,8 +58,12 @@ class LoginController extends APIController
     /**
      * Send a reset password link to user
      */
-    public function forgotPassword()
+    public function forgotPassword(Request $request)
     {
+        $user = User::query()->where('email', $request->email);
+        if ($user){
+
+        }
 
     }
 
