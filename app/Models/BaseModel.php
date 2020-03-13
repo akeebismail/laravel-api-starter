@@ -4,6 +4,7 @@
 namespace App\Models;
 
 use App\Services\Hasher;
+use DateTimeInterface;
 use Illuminate\Database\Eloquent\Model;
 
 abstract class BaseModel extends Model
